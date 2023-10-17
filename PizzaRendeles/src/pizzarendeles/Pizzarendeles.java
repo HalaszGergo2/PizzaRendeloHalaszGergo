@@ -395,7 +395,7 @@ public class Pizzarendeles extends javax.swing.JFrame {
     private void btnMegrendelesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMegrendelesActionPerformed
        String uzenet = "Biztos, hogy megrendeled?";
        String cim = "MEGRENDELÉS MEGERŐSÍTÉSE";
-       String osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nÜditő: "+cmbUdito.getSelectedItem();
+       String osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
        boolean MeretValasztva = cmbMeret.getSelectedIndex() > 0;
        if(MeretValasztva){
        }else{
