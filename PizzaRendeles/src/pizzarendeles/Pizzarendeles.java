@@ -395,11 +395,60 @@ public class Pizzarendeles extends javax.swing.JFrame {
     private void btnMegrendelesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMegrendelesActionPerformed
        String uzenet = "Biztos, hogy megrendeled?";
        String cim = "MEGRENDELÉS MEGERŐSÍTÉSE";
-       String osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+       String osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+       
        boolean MeretValasztva = cmbMeret.getSelectedIndex() > 0;
+       boolean TesztaValasztva = cmbTeszta.getSelectedIndex() > 0;
+       boolean UditoValasztva = cmbUdito.getSelectedIndex() > 0;
+       if(rbnSonka.isSelected()){
+                   osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+
+        if(rbnOlaszkolbasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+", "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+                if(rbnAnanasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+", "+rbnAnanasz.getText()+", "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+
+        }
+        }
+        
+       }
+       if(rbnOlaszkolbasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+                
+                if(rbnSonka.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+", "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+                  if(rbnAnanasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+", "+rbnAnanasz.getText()+", "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+        }
+        }
+       }
+       if(rbnAnanasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnAnanasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+                if(rbnOlaszkolbasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnAnanasz.getText()+", "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+
+                }
+                if(rbnSonka.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+", "+rbnAnanasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+                  if(rbnOlaszkolbasz.isSelected()){
+                osszegzo = (String) "Rendelésed összesítője: "+"\nNév: "+txtNev.getText()+"\nVáros: "+txtVaros.getText()+"\nTelefonszám: "+txtTelefon.getText()+"\nUtca, házszám: "+txtCim.getText()+"\nMéret: "+cmbMeret.getSelectedItem()+"\nTészta: "+cmbTeszta.getSelectedItem()+"\nFeltétek: "+rbnSonka.getText()+", "+rbnAnanasz.getText()+", "+rbnOlaszkolbasz.getText()+"\nÜditő: "+cmbUdito.getSelectedItem()+"\nA pizza összege 1500Ft";
+        }
+        }
+       }
+
+       
+       
        if(MeretValasztva){
        }else{
         osszegzo = "Nincs méret választva";
+       }
+       if(TesztaValasztva){
+       }else{
+        osszegzo = "Nincs tészta választva";
+       }
+       if(UditoValasztva){
+       }else{
+        osszegzo = "Nincs üditő választva";
        }
        JOptionPane.showMessageDialog(rootPane, osszegzo, cim, 2);
     }//GEN-LAST:event_btnMegrendelesActionPerformed
